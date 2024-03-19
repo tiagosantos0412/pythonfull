@@ -1,0 +1,46 @@
+# Virtual environment
+venv/
+
+# Ignore database configuration files
+db.sqlite3
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore settings file
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.sqlite3
+
+# Ignore local settings
+local_settings.py
+
+# Ignore log files
+*.log
+
+# Ignore staticfiles folder
+staticfiles/
+
+# Ignore media folder
+media/
+
+# Ignore database backup files
+*.bak
+*.sql
+
+# Ignore system files that might be created by your operating system
+.DS_Store
+Thumbs.db
+
+# Ignore environment file
+.env
+
+# Ignore any migration files
+/migrations/
+
+# Ignore database credentials file
+/db_credentials.txt
+settings.py
