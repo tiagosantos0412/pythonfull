@@ -2,17 +2,25 @@
 #se ele ficou de recuperação (nota maior ou igual a 4) ou se ele foi
 #reprovado (nota menor do que 4)
 
+print('Média Escolar')
+nome_do_aluno = input('Insira o nome do aluno: ')
+nota_1 = float(input('Digite a primeira nota do aluno: '))
+nota_2 = float(input('Digite a segunda nota do aluno: '))
+nota_3 = float(input('Digite a terceira nota do aluno: '))
+nota_4 = float(input('Digite a quarta nota do aluno: '))
 
-nota1 = float(input('Digite a nota 1: '))
-nota2 = float(input('Digite a nota 2: '))
-nota3 = float(input('Digite a nota 3: '))
-nota4 = float(input('Digite a nota 4: '))
+media_escolar = int((nota_1 + nota_2 + nota_3 + nota_4) / 4)
 
-media = (nota1 + nota2 + nota3 +nota4) / 4
-
-if media >= 6:
-    print(f'Aluno aprovado com a nota {media}')
-elif media >= 4:
-    print(f'Aluno de recuperação com a nota {media}')
+if media_escolar >= 10:
+    print(f'Parabéns {nome_do_aluno}, você foi aprovado com a nota máxima!')
+    print(f'Sua média foi {media_escolar}')
+elif media_escolar >=7 and media_escolar < 10:
+    print(f'Parabéns {nome_do_aluno}, você foi aprovado.')
+    print(f'Sua média foi {media_escolar}')
+elif media_escolar < 7 and media_escolar >= 5:
+    print(f'Atenção {nome_do_aluno}, você está de recuperação!.')
+    print(f'Sua média foi {media_escolar}')
 else:
-    print(f'Aluno reprovado com a nota {media}')
+    print(f'Lamento informar {nome_do_aluno}, você foi reprovado.')
+    print(f'Sua média foi {media_escolar}')
+
