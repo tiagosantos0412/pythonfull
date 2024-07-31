@@ -1,8 +1,9 @@
 #Receba um número inteiro do usuário e mostre a tabuada desse número.
 
-n1 = int(input('Digite qual número deseja saber a tabuada: '))
-
-i = 1
+numero = int(input('Escolha a tabuada que deseja calcular: '))
+i = 0
+print(f'Ótimo!!! Vamos calcular a tabuada do {numero}')
 while i <= 10:
-    print(f"{n1} x {i} == {n1*i}")
+    resultado = numero * i
+    print(f'{numero} x {i} = {resultado}')
     i += 1
