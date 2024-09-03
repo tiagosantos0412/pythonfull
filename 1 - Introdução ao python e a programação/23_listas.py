@@ -1,7 +1,8 @@
-x = [1, 2, 3]
-y = x
-z = x.copy()
+nomes = ['Tiago', 'Viviane', 'Raul']
 
-print(hex(id(x)))
-print(hex(id(y)))
-print(hex(id(z)))
+# Retorna o tipo do dado 
+print (type(nomes))
+# Imprime toda a lista
+print (nomes)
+# Retorna o tamanho da lista
+print(f'Tamanho da lista:  {len(nomes)}')
