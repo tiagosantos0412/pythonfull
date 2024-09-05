@@ -17,3 +17,9 @@ print(idades)
 # removendo o ítem do índice 0
 idades.pop(0)
 print(idades)
+
+# Podemos utilizar também o remove que diferente do pop que recebe uma posição
+# ou um índice da lista, o remove recebe o valor na qual precisamos remover
+idades.remove(58) # removendo o ítem 58 da lista
+print(idades)
+
