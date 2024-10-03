@@ -10,3 +10,12 @@ print(y)
 
 k = [i for i in range(0, 11) if i > 4]
 print(k)
+
+#Referência para endereço de memória
+lista1 = [1, 2, 3]
+lista2 = lista1
+lista3 = lista1.copy()
+
+print(hex(id(lista1)))
+print(hex(id(lista2)))
+print(hex(id(lista3)))
